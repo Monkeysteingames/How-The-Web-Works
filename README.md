@@ -33,8 +33,11 @@ A result from the server based on the request submitted
 What is an HTTP header? Give a couple examples of request and response headers you have seen.
 
 A message that lets clients and servers pass information to eachother with an HTTP request or response.
+Request Examples: Accept, Accept-Language
+Response Expamples: Keep-Alive, Last-Modified, Set-Cookie
 
 What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
 
-The browser sends a request to the computer cache to see if we've visited this website, if not it will go through the router and then to my ISP. If the website is not located by the time we search our ISP
-the search gets sent a DNS sever. In this particular case the website was found but redirected to a new url that isn't the domain name that was looked up. 
+The DNS translates the domain name into an IP address. The browser and OS search their cache to see if we've visited this site bfore. If the site is not located at this point
+the request gets sent off to the ISP. If it isn't located at this point it is searched through the DNS. In this particular case the sight we attempted to look up had redirected
+me to a seperate url.
